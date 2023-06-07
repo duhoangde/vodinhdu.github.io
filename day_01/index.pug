@@ -1,0 +1,41 @@
+include ./pug/mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        title Travel Guide
+    body
+        section.tour
+            .container
+                h2.heading Top Bangkok Tours
+                .tour-list
+                    +tourItem("./image/image-01.png","From $40"," Thailands Ayutthaya Temples Cruise from Bangkok", 4.8, 12, 9,61)
+                    +tourItem("./image/image-02.png","From $70","FLoating Markets Day Trip from Bangkok", 4.8, 12, 9,100)
+                    +tourItem("./image/image-03.png","From $70","Bangkok Dinner Cruise on the Chao Phraya River", 4.8, 12, 9,81)
+        section.popuplar
+            .container
+                h2.heading Popular things to do in Bangkok
+                .popuplar-list 
+                    +popuplarItem
+                    +popuplarItem
+                    +popuplarItem
+                    +popuplarItem
+        section.gem
+            .container
+                h2.heading.gem-heading Hidden gems in Bangkok
+                .gem-list
+                    each val in ["https://images.unsplash.com/photo-1682695798522-6e208131916d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80","https://plus.unsplash.com/premium_photo-1682377521566-f70ac8abe597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80","https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80","https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80"] 
+                        .gem-item
+                            img(src=val, alt="")
+                            .gem-content
+                                h4.gem-title Bangkok Trip
+                                span.gem-time 27 Sep, 2020
+                        
+                        
+    
+            
+                        
