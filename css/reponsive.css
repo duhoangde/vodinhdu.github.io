@@ -1,0 +1,80 @@
+
+@media screen and (max-width: 767.98px) {
+  /* Tour */
+  .tour-list{
+    gap: 20px;
+  }
+  .tour-item{
+    width: 100%;
+  }
+  .tour-top{
+    height: 211px;
+  }
+  .tour-content{
+    padding: 17px 20px 12px;
+  }
+  .tour-title{
+    font-size: 16px;
+  }
+
+  .tour-review-count,.tour-duration{
+    font-size: 12px;
+  }
+  /* Popuplar */
+  .popuplar-item{
+    width: 100%;
+  }
+  .popuplar-list{
+    gap: 20px;
+  }
+  /* Gem */
+  .gem-list{
+    grid-template-rows: 100px 100px 70px
+  }
+  .diamond-list{
+    gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .diamond-image{
+    height: 133px;
+  }
+  .footer-list-columns,.footer-bottom{
+    flex-direction: column;
+  }
+  hr{
+    margin-top: 40px;
+  }
+  .diamond-all{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .footer{
+    padding: 30px 0;
+  }
+  .footer-top{
+    padding-bottom: 30px;
+  }
+  .diamond-all{
+
+  }
+}
+@media screen and (min-width: 767.98px) and (max-width: 1023.98px) {
+  .tour-list{
+    row-gap: 20px;
+  }
+  .tour-item{
+    width: calc(50% - 30px);
+  }
+  .popuplar-list{
+    row-gap: 20px;
+  }
+  .popuplar-item{
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .footer-columns:first-child{
+    max-width: 268px;
+  }
+}
